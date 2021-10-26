@@ -1,0 +1,160 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(55, 55, 55);
+}
+body{
+    padding: 5%;
+    background-color: #68161671;
+}
+header{
+    margin-bottom: 7%;
+}
+#top{
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+    transition: all 1s;
+}
+ul{
+    padding-left: 0;
+}
+h2, li{
+    list-style: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 18px;
+}
+h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(146, 17, 17);
+}
+.projects img:hover,
+.bio img:hover{
+    transform: scale(1.1);
+}
+.top-name{
+    font-size: 30px;
+    color: rgb(146, 17, 17);
+}
+.profile-img{
+    padding-top: 40px;
+    width: 15em;
+}
+.bio h2{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.portfolio-container{
+    padding-top: 0;
+    padding-bottom: 10%;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(255, 0, 0, 0.5);
+}
+#portfolio{
+    font-size: 20px;
+    padding: 3.5em;
+}
+.portfolio-section{
+    padding-bottom: 1em;
+}
+.skills-container img{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(255, 0, 0, 0.5);
+}
+.contact-info{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact{
+    font-weight: 600;
+}
+.email{
+    margin-bottom: 90px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid slategrey 1px;
+}
+.name{
+    color: rgb(146, 17, 17);
+}
+
+@media screen and (min-width: 768px){
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    .bio{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .profile-img{
+        padding-top: 25px;
+        width: 50%;
+    }
+    .bio h2{
+        margin-right: 20px;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    section.portfolio-section{
+        width: 47%;
+    }
+    section.portfolio-section:nth-child(odd){
+        margin-right: 3%;
+    }
+    .contact-container p{
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    a.top{
+        display: none;
+    }
+    #nav-bottom{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .top-name{
+        font-size: 25px;
+    }
+    section.portfolio-section{
+        width: 30%;
+    }
+    section.portfolio-section:nth-child(even){
+        margin-right: 3.3%;
+    }
+    .projects{
+        margin-left: 20px;
+    }
+}
