@@ -95,6 +95,9 @@ footer{
 .name{
     color: rgb(146, 17, 17);
 }
+.nav-bottom{
+    display: none;
+}
 
 @media screen and (min-width: 768px){
     ul{
